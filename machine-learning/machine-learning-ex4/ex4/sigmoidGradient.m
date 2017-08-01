@@ -19,8 +19,8 @@ g = zeros(size(z));
 
 
 
-
-
+zz = sigmoid(z);
+g = zz .* (1.-zz);
 
 
 
