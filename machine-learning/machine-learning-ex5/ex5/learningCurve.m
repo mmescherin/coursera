@@ -55,6 +55,20 @@ error_val   = zeros(m, 1);
 
 
 
+for i=1:m;
+  
+  xx = X(1:i, : );
+  yy = y(1:i); 
+ 
+  th = trainLinearReg(xx, yy, lambda);
+  
+  error_train(i) =  sum((xx * th .- yy) .^ 2)  / (2 * i) ; 
+  error_val(i) = sum((Xval * th .- yval) .^ 2)  / (2 * m) ; 
+  
+end;
+
+
+
 
 
 
