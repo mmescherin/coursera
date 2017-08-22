@@ -161,7 +161,7 @@ pause;
 fprintf('\nChecking Backpropagation (w/ Regularization) ... \n')
 
 %  Check gradients by running checkNNGradients
-lambda = 3;
+lambda = 1;
 checkNNGradients(lambda);
 
 % Also output the costFunction debugging values
@@ -189,7 +189,7 @@ fprintf('\nTraining Neural Network... \n')
 options = optimset('MaxIter', 50);
 
 %  You should also try different values of lambda
-lambda = 1;
+lambda = 3;
 
 % Create "short hand" for the cost function to be minimized
 costFunction = @(p) nnCostFunction(p, ...
