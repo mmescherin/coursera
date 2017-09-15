@@ -57,7 +57,7 @@ fprintf('\nRunning PCA on example dataset.\n\n');
 %  directions of maximum variations in the dataset.
 hold on;
 drawLine(mu, mu + 1.5 * S(1,1) * U(:,1)', '-k', 'LineWidth', 2);
-drawLine(mu, mu + 1.5 * S(2,2) * U(:,2)', '-k', 'LineWidth', 2);
+%drawLine(mu, mu + 1.5 * S(2,2) * U(:,2)', '-k', 'LineWidth', 2);
 hold off;
 
 fprintf('Top eigenvector: \n');
